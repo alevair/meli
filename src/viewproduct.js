@@ -2,7 +2,6 @@ import { React, Fragment } from 'react';
 import {useLocation} from "react-router-dom";
 
 import Head from "./head"
-import Tree from "./tree"
 import Item from "./item"
 
 export default function ViewProduct() {
@@ -14,10 +13,7 @@ export default function ViewProduct() {
         <Fragment>
             <Head></Head>
             <main>
-                <Tree></Tree>
-                <div className="data_cont">
-                    <Item iditem={iditem}></Item>
-                </div>
+                <Item iditem={iditem}></Item>
             </main>
         </Fragment>
         );

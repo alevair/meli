@@ -2,6 +2,8 @@ import React from "react";
 
 import {  BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
+import "./App.css"
+
 import ViewBox from "./viewbox"
 import ViewProduct from "./viewproduct"
 import ViewResults from "./viewresults";

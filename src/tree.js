@@ -2,11 +2,9 @@ import { Component } from 'react';
 
 class Tree extends Component {
 
-
     render() {
-
         let items = [];
-
+        
         if(this.props.filters !== undefined) {
             if(this.props.filters.length > 0) {
                 if(this.props.filters[0].values.length > 0) {

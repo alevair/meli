@@ -7,8 +7,7 @@ class Tile extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            price: props.price//,
-            //id: null
+            price: props.price
         };
     };
 
@@ -17,8 +16,8 @@ class Tile extends Component {
         .then((res) => {
 
             let price = res.symbol + " " + this.props.price;
-
-            this.setState({ price: price}); //, idtile: this.props.idtile});
+            this.setState({ price: price});
+            
         }).catch((err) => {
             alert(err);
         });
